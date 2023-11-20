@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat avec IA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+    <style>
+        .chat-container {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Obtenez des conseils d’expert en discutant avec notre IA</h1>
+    </header>
+    <div class="main-content">
+        <div class="chat-container">
+
+        </div>
+        <div class="message-input-wrapper">
+            <input type="text" class="message-input" placeholder="Posez une question...">
+            <div class="button-container">
+                <div class="send-button">➤</div>
+                <button class="voice-button">🎤</button>
+                <button class="reset-button"><i class="fas fa-redo"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+       <div class="modal-content">
+           <span class="close">&times;</span>
+          <h2>Nom du produit</h2>
+         <p>Product Features ici...</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
